@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Do Do!</title>
+            <link rel="stylesheet" href="styles.css">
+            
+    </head>
+    <body>
+        <header>
+            <div class="Navbar">
+               <div id="Home" class="NavbarItem">Home</div>
+               <div  id="Login" class="NavbarItem">Login</div>
+               <div id="YourNotes" class="NavbarItem">Your notes</div>
+               <div id="Friends" class="NavbarItem">Friends</div>
+               <div id="ProgressPro" class="NavbarItem">ProgressPro</div>
+            </div>
+        </header>
+        <main>
+            <div id="Logindiv" class="LoginPageDiv">
+                <button id="log" class="LoginPageButton">Login</button>
+                <form class="LoginPageForm" id="LoginForm">
+                        <input type="text" name="username" required placeholder="Username"/>
+                        <input type="password" name="password" required placeholder="password"/>
+                        <input type="submit" value="Login"/>
+                </form>
+            </div> 
+            <div class="LoginPageDiv">
+                <button  id="sign" class="LoginPageButton">Signup</button>
+                <form class="LoginPageForm" id="SignupForm">
+                    <input type="text" required name="username" placeholder="Username"/>
+                    <input type="password" required name="password" placeholder="password"/>
+                    <input type="text" required name="name" placeholder="Name" />
+                    <div class="radios">
+                        <input type="radio" name="ed" value="School"/>
+                        <Label>School</Label>
+                        <input type="radio" name="ed" value="College"/>
+                        <Label>College</Label>
+                    </div>
+
+                    <input type="submit" value="SignUp">
+            </form>
+            </div>
+
+        </main>
+        <script type="module" src="Login.js">
+
+        </script>
+    </body>

@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: skyblue;
+}
+
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: center;
+}
+
+.NavbarItem{
+    color:white;
+    font-weight: bolder;
+}
+
+.NavbarItem:hover{
+    cursor:pointer;
+    color: black;
+    opacity: 0.7;
+  
+}
+
+
+#HomePanda{
+    position: absolute;
+    top:30%;
+    left:0%;;
+    width:70%;
+    animation: driftin 3s ease;
+
+}
+
+#MainDes{
+    background-color: white;
+    width: 50%;
+    position: fixed;
+    left: 45%;
+    top:25%;
+    border-radius: 12px;
+    word-wrap: break-word;
+    padding-left:40px;
+    padding-right: 40px;
+    padding-top:200px;
+    padding-bottom: 200px;
+    font-size: 1.5rem;
+    font-family: cursive;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+}
+
+@keyframes driftin {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+#Logindiv{
+    position: fixed;
+    left:10%;
+    top:25%;
+    
+}
+.LoginPageDiv{
+    background-color: white;
+    width: 40%;
+    position: fixed;
+    left: 55%;
+    top:25%;
+    border-radius: 12px;
+    word-wrap: break-word;
+    padding-left:40px;
+    padding-right: 40px;
+    padding-top:200px;
+    padding-bottom: 200px;
+    font-size: 1.5rem;
+    font-family: cursive;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.LoginPageForm{
+    opacity: 0;
+    
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+#LoginForm{
+
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    display: none;
+}
+
+
+.LoginPageForm input{
+    padding: 12px;
+    border-radius: 12px;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.LoginPageForm input[type="submit"]{
+    padding: 12px;
+    border-radius: 12px;
+    background-color: skyblue;
+}
+
+
+#SignupForm{
+
+    flex-direction: column;
+    gap:5px;
+    display: none;
+    align-items: center;
+
+    
+}
+
+#SignupForm .radios{
+    display: flex;
+    flex-direction: row;
+    gap:12px;
+}
+.LoginPageForm *{
+    width:40%;
+}
+.LoginPageButton{
+    position: absolute;
+    left:30%;
+    bottom:50%;
+    border-radius: 12px;
+    padding:20px;
+    width:30%;
+    color:white;
+    background-color: green;
+    animation: bgcolor 4s ease-in infinite ;
+
+
+}
+
+@keyframes bgcolor {
+    0%{
+        background-color:  #CCF381 ;
+        color: #4831D4;
+    }
+    25%{
+        background-color:  #00539C ;
+        color: #EEA47F;
+    } 
+    50%{
+        background-color: #2F3C7E;
+        color: #FBEAEB;
+    }
+    75%{
+        background-color: #101820;
+        color:#FEE715;
+    }
+    100%{
+        background-color: #F96167 ;
+        color: #F9E795;
+    }
+}
+.LoginPageButton:hover{
+    opacity: 0.5;
+    transform: scale(1.5);
+   
+}
+
+
+*:hover{
+    cursor: pointer;
+}
+
+main{
+    height:100%;
+}
+
+#Notesection{
+    width:50%;
+    height:400px;
+    position: absolute;
+    top:20%;
+    left:30%;
+    padding:20px;
+    background-color: white;
+    border-radius: 12px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    overflow:scroll;
+}
+
+#Notesection input{
+    width:40%;
+
+}
+
+
+#AddToDo{
+    position: absolute;
+    left:75%;
+    top:80%;
+    padding:20px;
+    border-radius: 12px;
+    width:20%;
+    background-color: green;
+    color:white;
+    font-size:1.5rem;
+    transition: scale 1s ease-in-out
+}
+
+#AddToDo:hover{
+    opacity:0.7;
+    transform: scale(1.15);
+}
+.Atodo{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.HeadInput{
+    padding:20px;
+    border-radius: 20px;
+    margin-left: 170px;
+    border:none;
+    font-size: 1.5rem;
+}
+
+.Close{
+    border-radius: 12px;
+    padding:12px;
+    border:none;
+    box-shadow: 2px 2px black;
+    background-color: red;
+    color:white
+}
